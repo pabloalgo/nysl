@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+
+    <title>Northside Youth Soccer League</title>
+
+    <!--Llamada hoja estilos-->
+    <link rel="stylesheet" href="./style/style.css" />
+  </head>
+  <body>
+    <header>
+      <!--- LO HE SACADO FUERA DEL HEADER EN EL MODELO 1 HABRA QUE HACER PADDING Y TAL VEZ FLOAT-->
+    </header>
+
+    <nav>
+      <ul>
+        <li><a href="./index.html">Home</a></li>
+        <li><a href="./game&infof.html">Game&Info</a></li>
+        <li><a href="./games&rulesf.html">Game&Rules</a></li>
+        <li>
+          <div class="logo">
+            <a href="#"> <img src="./img/nysl_logo.png" alt="nysl_logo" /> </a>
+          </div>
+        </li>
+        <li><a href="./about.html">About NYSL</a></li>
+        <li><a href="./register.html">Registro</a></li>
+        <li><a href="./contact.html">Contact</a></li>
+      </ul>
+    </nav>
+    <h2 class="subtitle">Northside Youth Soccer League</h2>
+
+    <main>
+      <article>
+        <h3 class="regis">Registration Form</h3>
+
+        <form action="/show_data.html">
+          <div class="cajafn">
+            <div class="nombre">
+              <label for="name">Player's First Name</label>
+              <input
+                id="name"
+                type="text"
+                name="nombre"
+                placeholder="your name"
+                required
+              />
+            </div>
+            <div class="apellido">
+              <label for="lname">Last Name:</label>
+              <input
+                id="lname"
+                type="text"
+                name="lname"
+                placeholder="your last name"
+                required
+              />
+            </div>
+          </div>
+
+          <!--    <div class="total">  </div>-->
+          <div class="adress">
+            <label for="adress">Adress:</label>
+            <input
+              id="adress"
+              type="text"
+              name="adress"
+              placeholder="your adress"
+              required
+            />
+          </div>
+          <div class="cajafc">
+            <div class="city">
+              <label for="city">City:</label>
+              <input
+                id="city"
+                type="text"
+                name="city"
+                placeholder="your city"
+              />
+              <label for="cp">Zip Code:</label>
+              <input id="cp" type="text" name="cp" />
+            </div>
+          </div>
+          <div class="cajafb">
+            <div class="bird">
+              <label for="birthday"> Birth Date:</label>
+              <input type="date" name="birthday" />
+            </div>
+            <div class="sex">
+              <label for="sex">Gender:</label>
+              <input type="radio" name="sex" value="f" required />Female
+              <input type="radio" name="sex" value="m" />Male
+            </div>
+          </div>
+
+          <div class="cajaf2">
+            <label for="elementary">Grade:</label>
+            <input type="radio" name="elementary" value="Pre-School" required />
+            Pre-School <input type="radio" name="elementary" value="1st" /> 1st
+            <input type="radio" name="elementary" value="2nd" /> 2nd
+            <input type="radio" name="elementary" value="3rd" /> 3rd
+            <input type="radio" name="elementary" value="4th" /> 4th
+            <input type="radio" name="elementary" value="5th" /> 5th
+          </div>
+
+          <div class="guardian">
+            <label for="guardian">Parent/Guardian:</label>
+            <input
+              id="guardian"
+              type="text"
+              name="guardian"
+              placeholder="your parent/guardian"
+              required
+            />
+          </div>
+
+          <div class="cajafn">
+            <div class="fphone">
+              <label for="fphone">Contact Phone:</label>
+              <input
+                id="fphone"
+                type="tel"
+                name="fphone"
+                placeholder="333-4444-4444"
+                size="20"
+                minlength="6"
+                maxlength="14"
+                required
+              />
+            </div>
+            <div class="mail">
+              <label for="fmail">Email:</label>
+              <input
+                id="fmail"
+                type="text"
+                name="fmail"
+                placeholder="your mail"
+                required
+              />
+            </div>
+          </div>
+
+          <h5 class="schoolc">Which elementary schools do you live near?</h5>
+
+          <div class="cajafs">
+            <h6 class="schoolcf">First Closest School:</h6>
+            <div class="schoolfcolumn">
+              <input type="radio" name="firstschool" value="AJ Katzenmaier" />
+              AJ Katzenmaier
+              <input type="radio" name="firstschool" value="Greenbay" />
+              Greenbay
+              <input type="radio" name="firstschool" value="Howard A Yeager" />
+              Howard A Yeager
+            </div>
+            <div class="schoolfcolumn">
+              <input type="radio" name="firstschool" value="Marjorie P Hart" />
+              Marjorie P Hart
+              <input type="radio" name="firstschool" value="North Elementary" />
+              North Elementary
+              <input type="radio" name="firstschool" value="South Elementary" />
+              South Elementary
+            </div>
+          </div>
+
+          <div class="cajafs">
+            <h6 class="schoolcf">Second Closest School:</h6>
+            <div class="schoolfcolumn">
+              <input type="radio" name="secondschool" value="AJ Katzenmaier" />
+              AJ Katzenmaier
+              <input type="radio" name="secondschool" value="Greenbay" />
+              Greenbay
+              <input type="radio" name="secondschool" value="Howard A Yeager" />
+              Howard A Yeager
+            </div>
+            <div class="schoolfcolumn">
+              <input type="radio" name="secondschool" value="Marjorie P Hart" />
+              Marjorie P Hart
+              <input
+                type="radio"
+                name="secondschool"
+                value="North Elementary"
+              />
+              North Elementary
+              <input
+                type="radio"
+                name="secondschool"
+                value="South Elementary"
+              />
+              South Elementary
+            </div>
+          </div>
+
+          <h5 class="schoolc">
+            What position(s) do you normally play? (check all that apply)
+          </h5>
+
+          <div class="schoolfcheckt">
+            <h6 class="schoolcf">
+              What position(s) do you normally play? (check all that apply)
+            </h6>
+            <div class="schoolfcheck">
+              <input type="checkbox" name="Forward" value="Forward" />
+              Forward
+              <input type="checkbox" name="Defense" value="Defense" />
+              Defense
+            </div>
+            <div class="schoolfcheck">
+              <input type="checkbox" name="Midfield" value="Midfield" />
+              Midfield
+              <input type="checkbox" name="Goalkeeper" value="Goalkeeper" />
+              Goalkeeper
+            </div>
+          </div>
+
+          <div class="schoolfcheckt">
+            <h6 class="schoolcf">
+              What position(s) do you want to play? (check all that apply)
+            </h6>
+            <div class="schoolfcheck">
+              <input type="checkbox" name="Forward" value="Forward" />
+              Forward
+              <input type="checkbox" name="Defense" value="Defense" />
+              Defense
+            </div>
+            <div class="schoolfcheck">
+              <input type="checkbox" name="Midfield" value="Midfield" />
+              Midfield
+              <input type="checkbox" name="Goalkeeper" value="Goalkeeper" />
+              Goalkeeper
+            </div>
+          </div>
+          <h6 class="schoolcf">
+            <input type="checkbox" name="Goalkeeper" value="Goalkeeper" />
+            Already Have a Uniform
+          </h6>
+
+          <div class="boxexto">
+            <div class="cajafs">
+              <h6 class="schoolcf">Jersey Size:</h6>
+
+              <div class="schooluni">
+                <div class="alwaysj">
+                  <input type="radio" name="uniform" value="Youth Small" />
+                  Youth Small
+                </div>
+                <div class="alwaysj">
+                  <input type="radio" name="firstschool" value="Youth Medium" />
+                  Youth Medium
+                </div>
+                <div class="alwaysj">
+                  <input type="radio" name="uniform" value="Youth Large" />
+                  Youth Large
+                </div>
+              </div>
+              <div class="schooluni">
+                <div class="alwaysj">
+                  <input type="radio" name="uniform" value="Small" /> Small
+                </div>
+                <div class="alwaysj">
+                  <input type="radio" name="uniform" value="Medium" /> Medium
+                </div>
+                <div class="alwaysj">
+                  <input type="radio" name="uniform" value="Extra-Large" />
+                  Extra-Large
+                </div>
+              </div>
+            </div>
+            <h6 class="schoolcf">Jersey Size:</h6>
+            <div class="cajafs">
+              <div class="schooluni">
+                <div class="alwaysj">
+                  <input type="radio" name="uniform" value="Youth Small" />
+                  Youth Small
+                </div>
+                <div class="alwaysj">
+                  <input type="radio" name="firstschool" value="Youth Medium" />
+                  Youth Medium
+                </div>
+                <div class="alwaysj">
+                  <input type="radio" name="uniform" value="Youth Large" />
+                  Youth Large
+                </div>
+              </div>
+              <div class="schooluni">
+                <div class="alwaysj">
+                  <input type="radio" name="uniform" value="Small" /> Small
+                </div>
+                <div class="alwaysj">
+                  <input type="radio" name="uniform" value="Medium" /> Medium
+                </div>
+                <div class="alwaysj">
+                  <input type="radio" name="uniform" value="Extra-Large" />
+                  Extra-Large
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <button type="submit">SUBMIT</button>
+
+          <h3 class="resbutton">Permission to Play</h3>
+          <p>
+            I, the parent or guardian of the minor registrant, agree that the
+            registrant and I will abide by all the rules of the Northside Youth
+            Soccer League (NYSL). In recognizing the possibility of physical
+            injury associated with soccer and in consideration for the “League”
+            accepting the registrant for its soccer programs and activities, I
+            hereby release, discharge, and/or otherwise indemnify NYSL, their
+            employees and associated personnel and volunteers, including the
+            facilities used for practices and games, against any claim by or on
+            behalf of the registrant as a result of the registrant’s
+            participation in the program and/or being transported to or from
+            NYSL sponsored activities, which transportation. By signing below, I
+            hereby agree and authorize the above. In addition, by signing below,
+            I also acknowledge that I have read the cancellation policy and
+            agree to its terms
+          </p>
+        </form>
+      </article>
+    </main>
+
+    <footer>
+      pie de pagina
+    </footer>
+  </body>
+</html>
